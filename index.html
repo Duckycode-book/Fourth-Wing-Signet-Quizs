@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fourth Wing Signet Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Fourth Wing Signet Quiz</h1>
+    <form id="quizForm">
+      <!-- QUESTIONS -->
+      <div class="question">
+        <p>1. What’s your greatest strength?</p>
+        <label><input type="radio" name="q1" value="Courage" /> Courage</label>
+        <label><input type="radio" name="q1" value="Intelligence" /> Intelligence</label>
+        <label><input type="radio" name="q1" value="Compassion" /> Compassion</label>
+        <label><input type="radio" name="q1" value="Resourcefulness" /> Resourcefulness</label>
+      </div>
+
+      <div class="question">
+        <p>2. Which element do you feel most connected to?</p>
+        <label><input type="radio" name="q2" value="Fire" /> Fire</label>
+        <label><input type="radio" name="q2" value="Water" /> Water</label>
+        <label><input type="radio" name="q2" value="Air" /> Air</label>
+        <label><input type="radio" name="q2" value="Earth" /> Earth</label>
+      </div>
+
+      <div class="question">
+        <p>3. How do you prefer to solve problems?</p>
+        <label><input type="radio" name="q3" value="Force" /> Through force and courage</label>
+        <label><input type="radio" name="q3" value="Think" /> By thinking it through</label>
+        <label><input type="radio" name="q3" value="Talk" /> Through conversation</label>
+        <label><input type="radio" name="q3" value="Instinct" /> Acting on instinct</label>
+      </div>
+
+      <div class="question">
+        <p>4. If you had a superpower, what would it be?</p>
+        <label><input type="radio" name="q4" value="Fire Control" /> Fire Control</label>
+        <label><input type="radio" name="q4" value="Invisibility" /> Invisibility</label>
+        <label><input type="radio" name="q4" value="Healing" /> Healing</label>
+        <label><input type="radio" name="q4" value="Telekinesis" /> Telekinesis</label>
+      </div>
+
+      <div class="question">
+        <p>5. Which word resonates most with you?</p>
+        <label><input type="radio" name="q5" value="Strength" /> Strength</label>
+        <label><input type="radio" name="q5" value="Wisdom" /> Wisdom</label>
+        <label><input type="radio" name="q5" value="Loyalty" /> Loyalty</label>
+        <label><input type="radio" name="q5" value="Freedom" /> Freedom</label>
+      </div>
+
+      <div class="question">
+        <p>6. How do you feel about teamwork?</p>
+        <label><input type="radio" name="q6" value="Solo" /> I prefer working alone</label>
+        <label><input type="radio" name="q6" value="Teamwork" /> I thrive in a team</label>
+        <label><input type="radio" name="q6" value="Lead" /> I lead the team</label>
+        <label><input type="radio" name="q6" value="Support" /> I support the team</label>
+      </div>
+
+      <div class="question">
+        <p>7. What is your greatest fear?</p>
+        <label><input type="radio" name="q7" value="Loss" /> Losing someone</label>
+        <label><input type="radio" name="q7" value="Failure" /> Failing</label>
+        <label><input type="radio" name="q7" value="Wasted Potential" /> Wasting potential</label>
+        <label><input type="radio" name="q7" value="Isolation" /> Isolation</label>
+      </div>
+
+      <div class="question">
+        <p>8. If you could change one thing in the world, what would it be?</p>
+        <label><input type="radio" name="q8" value="Peace" /> Bring peace</label>
+        <label><input type="radio" name="q8" value="Nature" /> Restore balance to nature</label>
+        <label><input type="radio" name="q8" value="Freedom" /> More freedom</label>
+        <label><input type="radio" name="q8" value="Love" /> More love and kindness</label>
+      </div>
+
+      <div class="question">
+        <p>9. What motivates you most?</p>
+        <label><input type="radio" name="q9" value="Greatness" /> Achieving greatness</label>
+        <label><input type="radio" name="q9" value="Protection" /> Protecting others</label>
+        <label><input type="radio" name="q9" value="Truth" /> Seeking truth</label>
+        <label><input type="radio" name="q9" value="Adventure" /> Adventure</label>
+      </div>
+
+      <div class="question">
+        <p>10. What would you do in battle?</p>
+        <label><input type="radio" name="q10" value="Charge" /> Charge in head first</label>
+        <label><input type="radio" name="q10" value="Sneak" /> Stay hidden and strike smart</label>
+        <label><input type="radio" name="q10" value="Support" /> Help from behind the lines</label>
+        <label><input type="radio" name="q10" value="Lead" /> Command the team</label>
+      </div>
+
+      <div class="question">
+        <p>11. What’s your idea of a perfect day?</p>
+        <label><input type="radio" name="q11" value="Adventure" /> Exploring and adventuring</label>
+        <label><input type="radio" name="q11" value="Learning" /> Learning and growing</label>
+        <label><input type="radio" name="q11" value="Friends" /> Spending time with friends</label>
+        <label><input type="radio" name="q11" value="Challenge" /> Overcoming something tough</label>
+      </div>
+
+      <div class="question">
+        <p>12. What role do you usually take in a group?</p>
+        <label><input type="radio" name="q12" value="Leader" /> The Leader</label>
+        <label><input type="radio" name="q12" value="Planner" /> The Planner</label>
+        <label><input type="radio" name="q12" value="Peacemaker" /> The Peacemaker</label>
+        <label><input type="radio" name="q12" value="Loner" /> The Loner</label>
+      </div>
+
+      <!-- SUBMIT BUTTON -->
+      <button type="button" onclick="showResult()">See Your Dragon</button>
+    </form>
+
+    <!-- RESULT SECTION -->
+    <div id="result" style="display: none">
+      <h2>Your Dragon Name: <span id="dragonName"></span></h2>
+      <p>Dragon Power: <span id="dragonPower"></span></p>
+      <img id="dragonImage" src="" alt="Your Dragon" />
+      <br />
+      <button onclick="retakeQuiz()">Retake Quiz</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

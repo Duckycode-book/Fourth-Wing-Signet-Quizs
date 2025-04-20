@@ -1,0 +1,38 @@
+body {
+  font-family: 'Georgia', serif;
+  background-image: url('scroll_background.jpg'); /* optional image */
+  background-size: cover;
+  color: #2e1d0e;
+  padding: 30px;
+}
+
+.quiz-container {
+  background: rgba(255, 255, 240, 0.9);
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 0 0 10px #00000030;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  background-color: #8b4513;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
